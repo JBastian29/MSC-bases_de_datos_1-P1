@@ -1,0 +1,74 @@
+
+SQL*Loader: Release 18.0.0.0.0 - Production on Mon Mar 20 00:24:32 2023
+Version 18.5.0.0.0
+
+Copyright (c) 1982, 2018, Oracle and/or its affiliates.  All rights reserved.
+
+Control File:   carga_masiva.ctl
+Data File:      DB_Excel_OG.csv
+  Bad File:     carga_masiva.bad
+  Discard File: carga_masiva.dsc 
+ (Allow all discards)
+
+Number to load: ALL
+Number to skip: 0
+Errors allowed: 50
+Bind array:     250 rows, maximum of 1048576 bytes
+Continuation:    none specified
+Path used:      Conventional
+
+Table DB_EXCEL_OG, loaded from every logical record.
+Insert option in effect for this table: INSERT
+TRAILING NULLCOLS option in effect
+
+   Column Name                  Position   Len  Term Encl Datatype
+------------------------------ ---------- ----- ---- ---- ---------------------
+NOMBRE_VICTIMA                      FIRST     *   ;       CHARACTER            
+APELLIDO_VICTIMA                     NEXT     *   ;       CHARACTER            
+DIRECCION_VICTIMA                    NEXT     *   ;       CHARACTER            
+FECHA_PRIMERA_SOSPECHA               NEXT     *   ;       CHARACTER            
+FECHA_CONFIRMACION                   NEXT     *   ;       CHARACTER            
+FECHA_MUERTE                         NEXT     *   ;       CHARACTER            
+ESTADO_VICTIMA                       NEXT     *   ;       CHARACTER            
+NOMBRE_ASOCIADO                      NEXT     *   ;       CHARACTER            
+APELLIDO_ASOCIADO                    NEXT     *   ;       CHARACTER            
+FECHA_CONOCIO                        NEXT     *   ;       CHARACTER            
+CONTACTO_FISICO                      NEXT     *   ;       CHARACTER            
+FECHA_INICIO_CONTACTO                NEXT     *   ;       CHARACTER            
+FECHA_FIN_CONTACTO                   NEXT     *   ;       CHARACTER            
+NOMBRE_HOSPITAL                      NEXT     *   ;       CHARACTER            
+DIRECCION_HOSPITAL                   NEXT     *   ;       CHARACTER            
+UBICACION_VICTIMA                    NEXT     *   ;       CHARACTER            
+FECHA_LLEGADA                        NEXT     *   ;       CHARACTER            
+FECHA_RETIRO                         NEXT     *   ;       CHARACTER            
+TRATAMIENTO                          NEXT     *   ;       CHARACTER            
+EFECTIVIDAD                          NEXT     *   ;       CHARACTER            
+FECHA_INICIO_TRATAMIENTO             NEXT     *   ;       CHARACTER            
+FECHA_FIN_TRATAMIENTO                NEXT     *   ;       CHARACTER            
+EFECTIVIDAD_EN_VICTIMA               NEXT     *   ;       CHARACTER            
+
+value used for ROWS parameter changed from 250 to 176
+Record 1: Rejected - Error on table DB_EXCEL_OG, column EFECTIVIDAD.
+ORA-01722: invalid number
+
+
+Table DB_EXCEL_OG:
+  14032 Rows successfully loaded.
+  1 Row not loaded due to data errors.
+  0 Rows not loaded because all WHEN clauses were failed.
+  0 Rows not loaded because all fields were null.
+
+
+Space allocated for bind array:                1044384 bytes(176 rows)
+Read   buffer bytes: 1048576
+
+Total logical records skipped:          0
+Total logical records read:         14033
+Total logical records rejected:         1
+Total logical records discarded:        0
+
+Run began on Mon Mar 20 00:24:32 2023
+Run ended on Mon Mar 20 00:25:06 2023
+
+Elapsed time was:     00:00:33.86
+CPU time was:         00:00:00.26
