@@ -11,7 +11,7 @@ app.version = "0.0.1"
 
 
 def dbConnection():
-    connection = cx_Oracle.connect("sebas","sebas","myservice")
+    connection = cx_Oracle.connect("user","password","myservice")
     connection.autocommit = True
     return connection
 
